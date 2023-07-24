@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejerciciouno</title>
+</head>
+<body>
+    <script>
+        const distancia1 = parseInt(prompt('Ingrese la distancia que va a recorrer expresada en metros:', ''));
+		
+		if (distancia1 < 1000) 
+        {
+			document.write(`Para recorrer ${distancia1} metros , te recomendamos ir a pie.`);
+		} 
+        else if ( distancia1 > 1000 && distancia1 <10000) {
+			document.write(`Para recorrer ${distancia1} metros , te recomendamos ir en bicicleta.`);
+		}
+		else if (distancia1 > 10000 && distancia1 < 30000) {
+            document.write (`Para recorrer ${distancia1} metros , te recomendamos ir en colectivo.`)
+        }
+        else if (distancia1 > 30000 && distancia1 < 100000) {
+            document.write (`Para recorrer ${distancia1} metros , te recomendamos ir en auto.`)
+        }
+        else if (distancia1 >100000) {
+            document.write (`Para recorrer ${distancia1} metros , te recomendamos ir en avión.`)
+        }
+
+    </script>
+</body>
+</html>
